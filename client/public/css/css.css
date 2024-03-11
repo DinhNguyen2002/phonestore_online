@@ -1,0 +1,133 @@
+     
+       .showAll {
+            color: white;
+            position: relative;
+            animation-name: showall;
+            animation-duration: 3s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes showall {
+            0% {
+                top: 10px;
+                background-color: red;
+                color: white;
+            }
+
+            20% {
+                background-color: orange;
+            }
+
+            40% {
+                background-color: yellow;
+            }
+
+            60% {
+
+                background-color: green;
+            }
+
+            80% {
+                background-color: blue;
+                color: white;
+
+            }
+
+            100% {
+                top: -10px;
+                background-color: gold;
+            }
+        }
+
+
+        .viewAll {      
+            color: white;    
+            position: relative;
+            animation-name: anime;
+            animation-duration: 3s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes anime {
+            0% {
+                
+                background-color: rgb(119, 0, 255);
+                top: 0px;
+            }
+
+            50% {                
+                background-color: rgb(89, 139, 13);
+                top: -10px;
+            }
+
+            100% {
+               
+                background-color: red;
+                top: -20px;
+            }
+        }
+
+        .product-item:hover .product-img img {
+            transform: none;
+        }
+
+        .nav-item {
+            margin: 0px 10px 0px 10px;
+            color: white;
+            font: 1em sans-serif;
+        }
+
+        .nav-item:hover {
+            background-color: #00fffa;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .head {
+            background-color: white;
+            color: black;
+        }
+
+        .nav-link.head.active {
+            background-color: greenyellow;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .head:hover {
+            background-color: #00fffa;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .nav-item.active {
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .brand:hover {
+            transform: translateY(-10px);
+            transition-duration: 1s;
+
+        }
+
+        .product-item:hover .product-img {
+            transform: translateY(-20px);
+            transition-duration: 1s;
+        }
+
+        .page-link.active {
+            z-index: 3;
+            color: #fff;
+            background-color: #D19C97;
+            border-color: #D19C97;
+        }
+
+        .owl-stage-outer {
+            padding-top: 50px;
+        }
